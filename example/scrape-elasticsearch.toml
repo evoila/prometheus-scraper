@@ -1,0 +1,29 @@
+[[ScrapeEndpoints]]
+type = "node"
+port = 9100
+interval = 10
+
+[[ScrapeEndpoints]]
+type = "elasticsearch"
+port = 9114
+interval = 10
+
+[[ScrapeEndpoints]]
+type = "postgres"
+port = 9187
+interval = 10
+includeNode = true
+
+[Elasticsearch]
+hosts = ["10.245.0.3"]
+port = 9200
+username = "test"
+password = "test"
+
+[MongoDB]
+hosts = ["localhost"]
+port = 27017
+username = "evoila"
+password = "evoila"
+database = "evoila"
+collection = "serviceInstance"
